@@ -768,3 +768,10 @@ p { margin: 0 0 16px; }
 @media (min-width: 720px) {
   #probleme .split-3 article + article { border-top: 0; border-left: 2px solid #2D55FF; }
 }
+
+/* ===== Ajustements textes v2 ===== */
+@media (min-width: 720px) {
+  .split-3.split-2 { grid-template-columns: repeat(2, 1fr); }
+}
+.step-number { font-size: 28px; }
+.faq details p strong { color: var(--white); font-weight: 600; }
