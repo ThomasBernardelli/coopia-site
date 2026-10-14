@@ -4,14 +4,15 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CoopIA Immo — L'assistant IA des agences immobilières</title>
-<meta name="description" content="CoopIA Immo répond à chaque demande de vos prospects en quelques minutes, même le soir, qualifie leur projet et prépare la réponse. Vous validez, vous gardez la main. Conçu à Aix-en-Provence pour les agences indépendantes." />
+<meta name="description" content="Vos clients n'ont pas d'horaires. Votre agence non plus. Une IA disponible 24 h/24 pour répondre, qualifier vos prospects et transformer chaque opportunité en rendez-vous." />
+<meta name="theme-color" content="#070D1A" />
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
 <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -22,20 +23,20 @@
 <header class="header">
   <div class="container header-inner">
     <a href="#top" class="header-logo">
-      <img src="assets/logo.png" alt="CoopIA" class="logo" width="1014" height="350" />
+      <img src="assets/logo-blanc.png" alt="CoopIA" class="logo" width="1014" height="350" />
     </a>
 
     <nav aria-label="Navigation principale">
       <ul class="nav-links">
-        <li><a href="#probleme">Le problème</a></li>
-        <li><a href="#fonctionnement">Comment ça marche</a></li>
+        <li><a href="#fonctionnement">Fonctionnement</a></li>
         <li><a href="#offres">Offres</a></li>
         <li><a href="#faq">Questions</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <div class="header-actions">
-      <a href="#contact" class="btn btn-accent btn-small"><span class="hide-mobile">Réserver une démo</span><span class="show-mobile">Démo</span></a>
+      <a href="#contact" class="btn btn-blue btn-small"><span class="hide-mobile">Réserver une démo</span><span class="show-mobile">Démo</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileNav">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -43,8 +44,7 @@
   </div>
 
   <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
-    <a href="#probleme">Le problème</a>
-    <a href="#fonctionnement">Comment ça marche</a>
+    <a href="#fonctionnement">Fonctionnement</a>
     <a href="#offres">Offres</a>
     <a href="#faq">Questions</a>
     <a href="#contact">Contact</a>
@@ -57,71 +57,116 @@
   <!-- Hero -->
   <section class="hero">
     <div class="container hero-inner">
-      <span class="chip">
-        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5c-2.8 0-5 2.1-5 4.8C3 10 8 14.5 8 14.5s5-4.5 5-8.2c0-2.7-2.2-4.8-5-4.8z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="6.3" r="1.7" fill="currentColor"/></svg>
-        Conçu à Aix-en-Provence, pour les agences indépendantes
-      </span>
-      <h1>Ne perdez plus un seul mandat parce que vous avez répondu trop tard.</h1>
-      <p class="lead">Votre assistant répond à chaque prospect en quelques minutes, même le soir, qualifie son projet et vous prépare la réponse. Vous gardez la main sur tout ce qui compte.</p>
+      <a href="#contact" class="pill">10 agences pilotes à Aix-en-Provence <span aria-hidden="true">→</span></a>
+      <h1>Vos clients n'ont pas d'horaires. <em>Votre agence non plus.</em></h1>
+      <p class="lead">Une IA disponible 24&nbsp;h/24 pour répondre, qualifier vos prospects et transformer chaque opportunité en rendez-vous.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Devenir agence pilote</a>
-        <a href="#histoire" class="btn btn-light">Voir comment ça marche</a>
+        <a href="#contact" class="btn btn-white">Réserver une démo <span aria-hidden="true">→</span></a>
+        <a href="#histoire" class="btn btn-ghost">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+          Voir comment ça marche
+        </a>
       </div>
-      <ul class="hero-proof">
-        <li>Réponse en quelques minutes</li>
-        <li>Soirs et week-ends compris</li>
-        <li>Vous validez avant envoi</li>
+    </div>
+
+    <!-- Aperçu produit -->
+    <div class="container">
+      <figure class="app" aria-label="Aperçu de l'assistant CoopIA Immo : les demandes reçues ce soir et une réponse prête à envoyer">
+        <div class="app-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="app-title">CoopIA Immo · Demandes de ce soir</span>
+        </div>
+        <div class="app-body">
+          <div class="app-side" aria-hidden="true">
+            <span class="is-active">Toutes les demandes <b>12</b></span>
+            <span>À valider <b>2</b></span>
+            <span>Réponses prêtes <b>7</b></span>
+            <span>Rendez-vous <b>3</b></span>
+            <span>Biens <b>18</b></span>
+          </div>
+          <div class="app-list">
+            <div class="app-list-head">Ce soir, depuis la fermeture</div>
+            <div class="lead-row is-active">
+              <div class="lead-top"><strong>Martine G.</strong><span>21:34</span></div>
+              <p>Estimation maison 4 pièces, Puyricard · vente sous 3 mois</p>
+              <div class="tags"><span class="tag tag-score">Score 9/10</span><span class="tag tag-red">Urgent</span></div>
+            </div>
+            <div class="lead-row">
+              <div class="lead-top"><strong>Sophie L.</strong><span>21:52</span></div>
+              <p>Propose une offre sur l'appartement AIX-002</p>
+              <div class="tags"><span class="tag">Score 6/10</span><span class="tag tag-yellow">À valider</span></div>
+            </div>
+            <div class="lead-row">
+              <div class="lead-top"><strong>Julien R.</strong><span>22:10</span></div>
+              <p>Visite du T3, quartier Mazarin</p>
+              <div class="tags"><span class="tag">Score 7/10</span><span class="tag tag-green">Réponse prête</span></div>
+            </div>
+          </div>
+          <div class="app-draft">
+            <span class="app-draft-title">Brouillon prêt · Martine G.</span>
+            <p class="app-draft-text">Bonjour Martine, merci pour votre message. Je peux venir estimer votre maison de Puyricard cette semaine. Seriez-vous disponible jeudi à 10&nbsp;h ou vendredi à 14&nbsp;h&nbsp;?</p>
+            <div class="app-draft-actions" aria-hidden="true">
+              <span class="fake-btn fake-btn-blue">Envoyer</span>
+              <span class="fake-btn">Modifier</span>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </div>
+
+    <div class="container sources">
+      <span class="sources-label">Branché sur les demandes que vous recevez déjà</span>
+      <ul>
+        <li>Leboncoin</li><li>SeLoger</li><li>Bien'ici</li><li>Votre site</li><li>Email</li><li>WhatsApp</li>
       </ul>
     </div>
   </section>
 
   <!-- Histoire / vidéo -->
-  <section id="histoire" class="story">
+  <section id="histoire" class="section">
     <div class="container">
-      <div class="story-card">
-        <div class="story-head">
-          <span class="story-eyebrow">Vendredi, 21 h 34</span>
-          <h2>Martine veut vendre sa maison. Elle écrit à trois agences.</h2>
-        </div>
-        <ol class="story-timeline">
-          <li>
-            <span class="story-agency">Agence A</span>
-            <span class="story-time">Lundi, 9 h 40</span>
-            <span class="story-text">Première réponse. Martine a déjà rendez-vous ailleurs.</span>
-          </li>
-          <li>
-            <span class="story-agency">Agence B</span>
-            <span class="story-time">Samedi, 11 h</span>
-            <span class="story-text">Un message automatique : « Nous reviendrons vers vous. »</span>
-          </li>
-          <li class="is-winner">
-            <span class="story-agency">Votre agence</span>
-            <span class="story-time">Vendredi, 21 h 38</span>
-            <span class="story-text">Une réponse personnalisée, deux questions sur son projet et un créneau d'estimation proposé. Martine accepte.</span>
-          </li>
-        </ol>
+      <div class="section-header">
+        <span class="eyebrow">Vendredi, 21 h 34</span>
+        <h2>Martine veut vendre sa maison. <em>Elle écrit à trois agences.</em></h2>
       </div>
+      <ol class="story">
+        <li>
+          <span class="story-agency">Agence A</span>
+          <span class="story-time">Lundi, 9 h 40</span>
+          <span class="story-text">Première réponse. Martine a déjà rendez-vous ailleurs.</span>
+        </li>
+        <li>
+          <span class="story-agency">Agence B</span>
+          <span class="story-time">Samedi, 11 h</span>
+          <span class="story-text">Un message automatique : « Nous reviendrons vers vous. »</span>
+        </li>
+        <li class="is-winner">
+          <span class="story-agency">Votre agence, avec CoopIA</span>
+          <span class="story-time">Vendredi, 21 h 38</span>
+          <span class="story-text">Une réponse personnalisée, deux questions sur son projet et un créneau d'estimation proposé. Martine accepte.</span>
+        </li>
+      </ol>
     </div>
   </section>
 
   <!-- Problème -->
-  <section id="probleme" class="section bg-white">
+  <section id="probleme" class="section">
     <div class="container">
       <div class="section-header">
         <span class="eyebrow">Le problème</span>
-        <h2>Les mandats se perdent dans les détails du quotidien</h2>
+        <h2>Les mandats se perdent <em>entre deux visites.</em></h2>
         <p>Vos agents sont sur le terrain, en visite, en estimation. Pendant ce temps, les demandes s'accumulent.</p>
       </div>
-      <div class="cards-3">
-        <article class="card">
+      <div class="split-3">
+        <article>
           <h3>Le premier qui répond gagne</h3>
           <p>Un propriétaire qui veut vendre contacte souvent plusieurs agences en même temps. La première réponse sérieuse prend l'avantage.</p>
         </article>
-        <article class="card">
+        <article>
           <h3>Le soir et le week-end, personne ne répond</h3>
           <p>C'est pourtant le moment où vos prospects ont le temps de chercher, de comparer et d'écrire.</p>
         </article>
-        <article class="card">
+        <article>
           <h3>Les vendeurs « pas encore prêts » sont oubliés</h3>
           <p>Ils vendront dans six mois. Sans relance, ce sera avec l'agence qui sera restée en contact avec eux.</p>
         </article>
@@ -133,45 +178,45 @@
   <section id="fonctionnement" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="eyebrow">Comment ça marche</span>
-        <h2>Votre assistant prépare, vous décidez</h2>
-        <p>Il se branche sur votre boîte mail et vos portails. Rien à changer dans vos habitudes ni dans votre logiciel.</p>
+        <span class="eyebrow">Fonctionnement</span>
+        <h2>Votre IA prépare. <em>Vous décidez.</em></h2>
+        <p>Elle se branche sur votre boîte mail et vos portails. Rien à changer dans vos habitudes ni dans votre logiciel.</p>
       </div>
       <ol class="steps">
-        <li class="step">
-          <span class="step-number">1</span>
+        <li>
+          <span class="step-number">01</span>
           <h3>La demande arrive</h3>
-          <p>leboncoin, SeLoger, votre site ou WhatsApp : chaque demande est lue dans la minute.</p>
+          <p>Leboncoin, SeLoger, votre site ou WhatsApp : chaque demande est lue dans la minute.</p>
         </li>
-        <li class="step">
-          <span class="step-number">2</span>
-          <h3>Le projet est qualifié</h3>
+        <li>
+          <span class="step-number">02</span>
+          <h3>Le prospect est qualifié</h3>
           <p>Budget, financement, délai, motivation : l'essentiel est extrait et rangé dans votre tableau de suivi.</p>
         </li>
-        <li class="step">
-          <span class="step-number">3</span>
+        <li>
+          <span class="step-number">03</span>
           <h3>La réponse est prête</h3>
           <p>Rédigée à partir de vos annonces, elle vous attend en brouillon. Vous relisez et vous envoyez.</p>
         </li>
-        <li class="step">
-          <span class="step-number">4</span>
-          <h3>Vous savez qui rappeler</h3>
+        <li>
+          <span class="step-number">04</span>
+          <h3>Le rendez-vous est pris</h3>
           <p>Un récapitulatif vous signale les prospects les plus chauds et les urgences en premier.</p>
         </li>
       </ol>
       <div class="control-note">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
-        <p><strong>Vous gardez toujours la main.</strong> Prix, négociation, offre, réclamation : tout ce qui engage l'agence passe par vous avant d'être envoyé. L'assistant n'invente aucune information absente de vos annonces.</p>
+        <p><strong>Vous gardez toujours la main.</strong> Prix, négociation, offre, réclamation : tout ce qui engage l'agence passe par vous avant d'être envoyé. L'IA n'invente aucune information absente de vos annonces.</p>
       </div>
     </div>
   </section>
 
   <!-- Offres -->
-  <section id="offres" class="section bg-white">
+  <section id="offres" class="section">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header section-header-left">
         <span class="eyebrow">Offres</span>
-        <h2>Choisissez votre formule</h2>
+        <h2>Une formule pour chaque agence. <em>Rentabilisée dès le premier mandat.</em></h2>
         <p>Un abonnement mensuel simple. Engagement de 3 mois, puis sans engagement.</p>
       </div>
       <div class="offers">
@@ -180,39 +225,38 @@
           <p class="offer-for">Pour les mandataires indépendants</p>
           <p class="offer-price">69 €<span> / mois</span></p>
           <p class="offer-setup">Sans frais d'installation</p>
+          <a href="#contact" class="btn btn-ghost btn-block">Choisir Solo</a>
           <ul class="offer-list">
             <li>Réponse et qualification de vos demandes</li>
             <li>Email et WhatsApp</li>
             <li>Réponses prêtes à valider</li>
           </ul>
-          <a href="#contact" class="btn btn-outline btn-block">Choisir Solo</a>
         </article>
         <article class="offer">
           <h3>Essentiel</h3>
           <p class="offer-for">Ne perdez plus aucune demande</p>
           <p class="offer-price">190 €<span> / mois</span></p>
           <p class="offer-setup">490 € d'installation</p>
+          <a href="#contact" class="btn btn-ghost btn-block">Choisir Essentiel</a>
           <ul class="offer-list">
-            <li>Réponse en quelques minutes, 7&nbsp;j/7</li>
-            <li>Qualification et tableau de suivi</li>
+            <li>Réponse en quelques minutes, 24&nbsp;h/24</li>
+            <li>Qualification et score des acquéreurs</li>
             <li>Proposition de rendez-vous</li>
             <li>Récapitulatif avec les urgences en tête</li>
           </ul>
-          <a href="#contact" class="btn btn-outline btn-block">Choisir Essentiel</a>
         </article>
         <article class="offer offer-featured">
-          <span class="offer-badge">Le plus rentable</span>
-          <h3>Mandats</h3>
+          <h3>Mandats <span class="offer-badge">Le plus complet</span></h3>
           <p class="offer-for">Allez chercher les vendeurs</p>
           <p class="offer-price">390 €<span> / mois</span></p>
           <p class="offer-setup">790 € d'installation</p>
+          <a href="#contact" class="btn btn-white btn-block">Choisir Mandats</a>
           <ul class="offer-list">
-            <li>Tout Essentiel</li>
+            <li>Tout ce qui est dans Essentiel</li>
             <li>Relance automatique des vendeurs pas encore prêts</li>
             <li>Réactivation de votre fichier de contacts</li>
             <li>Alerte dès qu'un propriétaire se décide</li>
           </ul>
-          <a href="#contact" class="btn btn-white btn-block">Choisir Mandats</a>
         </article>
       </div>
       <p class="offers-note">Vous êtes un réseau de mandataires ? <a href="#contact">Parlons d'un tarif adapté.</a></p>
@@ -220,42 +264,42 @@
   </section>
 
   <!-- Offre pilote -->
-  <section class="section">
+  <section class="section section-tight">
     <div class="container">
       <div class="pilot">
         <div>
-          <span class="eyebrow eyebrow-light">Offre pilote</span>
-          <h2>Les 10 premières agences démarrent à tarif réduit</h2>
-          <p>Et si l'assistant ne vous apporte pas au moins 5 rendez-vous qualifiés le premier mois, ce mois vous est remboursé.</p>
+          <span class="eyebrow">Offre pilote</span>
+          <h2>Les 10 premières agences démarrent <em>à tarif réduit.</em></h2>
+          <p>Et si l'IA ne vous apporte pas au moins 5 rendez-vous qualifiés le premier mois, ce mois vous est remboursé.</p>
         </div>
-        <a href="#contact" class="btn btn-white">Devenir agence pilote</a>
+        <a href="#contact" class="btn btn-white">Devenir agence pilote <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="section bg-white">
+  <section id="faq" class="section">
     <div class="container container-narrow">
       <div class="section-header">
         <span class="eyebrow">Questions</span>
-        <h2>Ce que les agences nous demandent</h2>
+        <h2>Ce que les agences <em>nous demandent.</em></h2>
       </div>
       <div class="faq">
         <details>
           <summary>Est-ce que je dois changer de logiciel ?</summary>
-          <p>Non. L'assistant travaille à partir de votre boîte mail et de vos annonces. Vous gardez votre logiciel actuel ; la connexion directe avec les principaux logiciels immobiliers est en cours de développement.</p>
+          <p>Non. L'IA travaille à partir de votre boîte mail et de vos annonces. Vous gardez votre logiciel actuel ; la connexion directe avec les principaux logiciels immobiliers est en cours de développement.</p>
         </details>
         <details>
-          <summary>L'assistant peut-il répondre n'importe quoi à mes clients ?</summary>
-          <p>Non. Il ne s'appuie que sur les informations de vos annonces et ne parle jamais de prix, de négociation ou de conditions de vente. Ces sujets vous sont toujours soumis avant tout envoi.</p>
+          <summary>L'IA peut-elle répondre n'importe quoi à mes clients ?</summary>
+          <p>Non. Elle ne s'appuie que sur les informations de vos annonces et ne parle jamais de prix, de négociation ou de conditions de vente. Ces sujets vous sont toujours soumis avant tout envoi.</p>
         </details>
         <details>
           <summary>Mes prospects sauront-ils qu'ils échangent avec une IA ?</summary>
-          <p>Oui, si vous laissez l'assistant envoyer certains messages lui-même : il se présente clairement. Quand vous validez et envoyez une réponse depuis votre boîte, c'est votre message.</p>
+          <p>Oui, si vous laissez l'IA envoyer certains messages elle-même : elle se présente clairement. Quand vous validez et envoyez une réponse depuis votre boîte, c'est votre message.</p>
         </details>
         <details>
           <summary>Combien de temps faut-il pour démarrer ?</summary>
-          <p>Quelques jours. Nous connectons votre boîte mail, importons vos annonces et réglons l'assistant avec vous. Les premières semaines, nous suivons chaque échange de près.</p>
+          <p>Quelques jours. Nous connectons votre boîte mail, importons vos annonces et réglons l'IA avec vous. Les premières semaines, nous suivons chaque échange de près.</p>
         </details>
         <details>
           <summary>Que deviennent les données de mes clients ?</summary>
@@ -270,7 +314,7 @@
     <div class="container contact-grid">
       <div class="contact-intro">
         <span class="eyebrow">Contact</span>
-        <h2>Voyons ce que l'assistant ferait pour votre agence</h2>
+        <h2>Voyons ce que l'IA ferait <em>pour votre agence.</em></h2>
         <p>Laissez-nous vos coordonnées : nous vous rappelons pour une démo de 15 minutes, sur vos propres annonces.</p>
         <ul class="check-list">
           <li>Démo en direct, sans engagement</li>
@@ -319,7 +363,7 @@
           <label for="message">Votre besoin <span class="optional">(facultatif)</span></label>
           <textarea id="message" name="message"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Être rappelé</button>
+        <button type="submit" class="btn btn-white btn-block">Être rappelé</button>
         <p class="form-note">Vos informations servent uniquement à vous recontacter.</p>
         <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
@@ -330,7 +374,7 @@
 
 <footer class="footer">
   <div class="container footer-inner">
-    <img src="assets/logo.png" alt="CoopIA" class="footer-logo" width="1014" height="350" />
+    <img src="assets/logo-blanc.png" alt="CoopIA" class="footer-logo" width="1014" height="350" />
     <ul class="footer-links">
       <li><a href="#offres">Offres</a></li>
       <li><a href="#faq">Questions</a></li>
