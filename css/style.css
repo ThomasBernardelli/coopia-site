@@ -757,17 +757,17 @@ p { margin: 0 0 16px; }
   .btn:hover { transform: none; }
 }
 
-/* ===== Le problème : ton rose, plus de caractère ===== */
-.glow-rose::before { background: radial-gradient(ellipse 60% 70% at 100% 0%, rgba(244, 114, 152, 0.3) 0%, rgba(15, 28, 52, 0) 70%); }
+/* ===== Le problème : bleu électrique, plus de caractère ===== */
+.glow-rose::before { background: radial-gradient(ellipse 60% 70% at 100% 0%, rgba(45, 85, 255, 0.42) 0%, rgba(15, 28, 52, 0) 70%); }
 #probleme .eyebrow,
-#probleme h2 em { color: #FF9DB5; }
-#probleme .split-3 { border-color: rgba(255, 157, 181, 0.28); }
+#probleme h2 em { color: #7C95FF; }
+#probleme .split-3 { border-color: rgba(76, 110, 255, 0.4); }
 #probleme .split-3 article {
   background: rgba(7, 13, 26, 0.55);
-  border-top: 2px solid #F47298;
+  border-top: 2px solid #2D55FF;
 }
-#probleme .split-3 article + article { border-left-color: rgba(255, 157, 181, 0.2); }
+#probleme .split-3 article + article { border-left-color: rgba(76, 110, 255, 0.3); }
 #probleme .split-3 h3 { color: #FFFFFF; }
 @media (max-width: 719px) {
-  #probleme .split-3 article + article { border-top: 2px solid #F47298; }
+  #probleme .split-3 article + article { border-top: 2px solid #2D55FF; }
 }
