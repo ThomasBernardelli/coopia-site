@@ -397,6 +397,39 @@ p { margin: 0 0 16px; }
   margin-bottom: 16px;
 }
 
+/* ===== Tons de section : du relief sans changer de direction ===== */
+.section { position: relative; isolation: isolate; }
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.tone-1 { background: #0B1426; }
+.tone-2 { background: #0F1C34; border-top-color: rgba(157, 184, 255, 0.14); }
+
+.glow-indigo::before { background: radial-gradient(ellipse 55% 60% at 50% 0%, rgba(120, 104, 230, 0.28) 0%, rgba(11, 20, 38, 0) 70%); }
+.glow-cyan::before { background: radial-gradient(ellipse 50% 70% at 0% 0%, rgba(56, 170, 220, 0.22) 0%, rgba(15, 28, 52, 0) 70%); }
+.glow-blue::before { background: radial-gradient(ellipse 45% 50% at 85% 55%, rgba(62, 111, 216, 0.22) 0%, rgba(7, 13, 26, 0) 70%); }
+
+.section-flush { border-top: 0; padding-top: 0; }
+
+/* Cartes plus sombres sur les fonds plus clairs, pour garder le contraste */
+.tone-2 .steps li,
+.tone-2 .contact-form { background: rgba(7, 13, 26, 0.6); border-color: rgba(157, 184, 255, 0.14); }
+.tone-1 .story li:not(.is-winner) { background: rgba(7, 13, 26, 0.55); }
+
+/* Couleur propre à chaque partie, reprise par le petit titre au-dessus */
+#histoire .eyebrow { color: #B3A8FF; }
+#fonctionnement .eyebrow,
+#fonctionnement .step-number { color: #7FD3F5; }
+#fonctionnement .control-note { border-color: rgba(127, 211, 245, 0.4); background: rgba(56, 170, 220, 0.08); }
+#fonctionnement .control-note svg { color: #7FD3F5; }
+#histoire h2 em { color: #B3A8FF; }
+#fonctionnement h2 em { color: #7FD3F5; }
+
 /* ===== Histoire ===== */
 .story {
   list-style: none;
@@ -607,8 +640,8 @@ p { margin: 0 0 16px; }
 .faq details p { color: var(--muted); padding-bottom: 24px; margin: 0; }
 
 /* ===== Contact ===== */
-.contact {
-  background: radial-gradient(ellipse 60% 60% at 100% 100%, rgba(62, 111, 216, 0.25) 0%, rgba(7, 13, 26, 0) 70%);
+.contact::before {
+  background: radial-gradient(ellipse 60% 60% at 100% 100%, rgba(62, 111, 216, 0.3) 0%, rgba(15, 28, 52, 0) 70%);
 }
 .contact-grid { display: grid; gap: 40px; align-items: start; }
 
