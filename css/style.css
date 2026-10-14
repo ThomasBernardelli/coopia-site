@@ -397,6 +397,42 @@ p { margin: 0 0 16px; }
   margin-bottom: 16px;
 }
 
+/* ===== Tons de section : du relief sans changer de direction ===== */
+.section { position: relative; isolation: isolate; }
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.tone-1 { background: #0B1426; }
+.tone-2 { background: #0F1C34; border-top-color: rgba(157, 184, 255, 0.14); }
+
+.glow-indigo::before { background: radial-gradient(ellipse 60% 65% at 50% 0%, rgba(139, 92, 246, 0.42) 0%, rgba(11, 20, 38, 0) 72%); }
+.glow-cyan::before { background: radial-gradient(ellipse 50% 70% at 0% 0%, rgba(56, 170, 220, 0.22) 0%, rgba(15, 28, 52, 0) 70%); }
+.glow-blue::before { background: radial-gradient(ellipse 45% 50% at 85% 55%, rgba(62, 111, 216, 0.22) 0%, rgba(7, 13, 26, 0) 70%); }
+
+.section-flush { border-top: 0; padding-top: 0; }
+
+/* Cartes plus sombres sur les fonds plus clairs, pour garder le contraste */
+#fonctionnement .steps li,
+.tone-2 .steps li,
+.tone-2 .contact-form { background: rgba(7, 13, 26, 0.6); border-color: rgba(157, 184, 255, 0.14); }
+.tone-1 .story li:not(.is-winner) { background: rgba(7, 13, 26, 0.55); }
+
+/* Couleur propre à chaque partie, reprise par le petit titre au-dessus */
+#histoire .eyebrow { color: #B69CFF; }
+#fonctionnement .eyebrow,
+#fonctionnement .step-number { color: #7FD3F5; }
+#fonctionnement .control-note { border-color: rgba(127, 211, 245, 0.4); background: rgba(56, 170, 220, 0.08); }
+#fonctionnement .control-note svg { color: #7FD3F5; }
+#histoire h2 em { color: #B69CFF; }
+#histoire .story li.is-winner { background: #1A1640; border-color: #8B5CF6; box-shadow: 0 0 80px -20px rgba(139, 92, 246, 0.6); }
+#histoire .story li.is-winner .story-agency { color: #C9B6FF; }
+#fonctionnement h2 em { color: #7FD3F5; }
+
 /* ===== Histoire ===== */
 .story {
   list-style: none;
@@ -607,8 +643,8 @@ p { margin: 0 0 16px; }
 .faq details p { color: var(--muted); padding-bottom: 24px; margin: 0; }
 
 /* ===== Contact ===== */
-.contact {
-  background: radial-gradient(ellipse 60% 60% at 100% 100%, rgba(62, 111, 216, 0.25) 0%, rgba(7, 13, 26, 0) 70%);
+.contact::before {
+  background: radial-gradient(ellipse 60% 60% at 100% 100%, rgba(62, 111, 216, 0.3) 0%, rgba(15, 28, 52, 0) 70%);
 }
 .contact-grid { display: grid; gap: 40px; align-items: start; }
 
@@ -719,4 +755,16 @@ p { margin: 0 0 16px; }
   html { scroll-behavior: auto; }
   .btn { transition: none; }
   .btn:hover { transform: none; }
+}
+
+/* ===== Le problème : bleu électrique, plus de caractère ===== */
+.glow-rose::before { background: radial-gradient(ellipse 60% 70% at 100% 0%, rgba(45, 85, 255, 0.42) 0%, rgba(15, 28, 52, 0) 70%); }
+#probleme .eyebrow,
+#probleme h2 em { color: #7C95FF; }
+#probleme .split-3 { border: 2px solid #2D55FF; }
+#probleme .split-3 article { background: rgba(7, 13, 26, 0.55); border: 0; }
+#probleme .split-3 article + article { border-top: 2px solid #2D55FF; }
+#probleme .split-3 h3 { color: #FFFFFF; }
+@media (min-width: 720px) {
+  #probleme .split-3 article + article { border-top: 0; border-left: 2px solid #2D55FF; }
 }
