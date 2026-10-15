@@ -775,3 +775,14 @@ p { margin: 0 0 16px; }
 }
 .step-number { font-size: 28px; }
 .faq details p strong { color: var(--white); font-weight: 600; }
+
+/* ===== Mentions légales ===== */
+.legal { padding: 72px 0 96px; }
+.legal h1 { font-size: clamp(40px, 6vw, 64px); margin-bottom: 40px; }
+.legal section { padding: 28px 0; border-top: 1px solid var(--line); }
+.legal h2 { font-size: 22px; letter-spacing: -0.02em; margin-bottom: 12px; }
+.legal p { color: var(--muted); }
+.legal p:last-child { margin-bottom: 0; }
+.legal strong { color: var(--text); font-weight: 600; }
+.legal a { color: var(--blue-light); }
+.legal-update { margin-top: 32px; font-size: 14px; color: var(--dim) !important; }
