@@ -122,30 +122,24 @@
     </div>
   </section>
 
-  <!-- Histoire / vidéo -->
+  <!-- Vidéo de présentation -->
   <section id="histoire" class="section tone-1 glow-indigo">
     <div class="container">
       <div class="section-header">
-        <span class="eyebrow">Vendredi, 21 h 34</span>
-        <h2>Martine veut vendre sa maison. <em>Elle écrit à trois agences.</em></h2>
+        <span class="eyebrow">Vidéo · 45 secondes</span>
+        <h2>CoopIA, <em>en 45 secondes.</em></h2>
       </div>
-      <ol class="story">
-        <li>
-          <span class="story-agency">Agence A</span>
-          <span class="story-time">Lundi, 9 h 40</span>
-          <span class="story-text">Première réponse. Martine a déjà rendez-vous ailleurs.</span>
-        </li>
-        <li>
-          <span class="story-agency">Agence B</span>
-          <span class="story-time">Samedi, 11 h</span>
-          <span class="story-text">Un message automatique : « Nous reviendrons vers vous. »</span>
-        </li>
-        <li class="is-winner">
-          <span class="story-agency">Votre agence, avec CoopIA</span>
-          <span class="story-time">Vendredi, 21 h 38</span>
-          <span class="story-text">Une réponse personnalisée, deux questions sur son projet et un créneau d'estimation proposé. Martine accepte.</span>
-        </li>
-      </ol>
+      <div class="video-frame">
+        <video id="promoVideo" preload="none" playsinline poster="assets/video/coopia-miniature.jpg">
+          <source src="assets/video/coopia-45s.mp4" type="video/mp4" />
+        </video>
+        <button type="button" class="video-play" id="videoPlay" aria-label="Lire la vidéo de présentation, avec le son">
+          <span class="video-play-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>
+          </span>
+          <span class="video-play-label">Lancer la vidéo</span>
+        </button>
+      </div>
     </div>
   </section>
 
