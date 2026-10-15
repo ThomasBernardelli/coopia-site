@@ -51,3 +51,15 @@ if (contactForm && formStatus) {
     }
   });
 }
+
+// Vidéo de présentation : lecture avec le son au clic, puis commandes classiques
+const promoVideo = document.getElementById("promoVideo");
+const videoPlay = document.getElementById("videoPlay");
+
+if (promoVideo && videoPlay) {
+  videoPlay.addEventListener("click", () => {
+    promoVideo.controls = true;
+    promoVideo.closest(".video-frame").classList.add("is-playing");
+    promoVideo.play();
+  });
+}
