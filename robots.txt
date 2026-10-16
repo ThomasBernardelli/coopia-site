@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coopia-immo.fr/sitemap.xml
