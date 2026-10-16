@@ -837,3 +837,8 @@ p { margin: 0 0 16px; }
   .video-play-icon { width: 64px; height: 64px; }
   .video-play-icon svg { width: 26px; height: 26px; }
 }
+
+/* ===== Offres v3 ===== */
+.offer-setup strong { color: var(--blue-light); font-weight: 600; }
+.offer-soon { opacity: 0.7; }
+.offer-badge-soon { background: #26324A; color: #C9D3E4; }
